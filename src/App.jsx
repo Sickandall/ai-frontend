@@ -1,17 +1,18 @@
 import Header from "./components/Header";
-import SearchBar from "./components/SearchBar";
-import MatrixBackground from "./components/MatrixBackground";
-import MainPanel from "./components/MainPanel";
+import HeroSection from "./components/HeroSection";
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-black text-white overflow-hidden">
-      <MatrixBackground />
+    <div className="relative min-h-screen bg-[#0b0f1a] text-white overflow-hidden">
+
+      {/* Moon Curve Gradient */}
+      <div className="absolute -top-40 -left-40 w-[800px] h-[800px] bg-gradient-to-br from-purple-700 via-blue-600 to-cyan-500 rounded-full blur-3xl opacity-30"></div>
+
+      <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-gradient-to-bl from-blue-600 via-purple-700 to-indigo-900 rounded-full blur-3xl opacity-20"></div>
 
       <div className="relative z-10">
         <Header />
-        <SearchBar />
-        <MainPanel />
+        <HeroSection />
       </div>
     </div>
   );
